@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background: hsl(201, 46%, 89%);
+    color: #333;
+}
+
+/* Container Layout */
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 30%;
+    background: #222;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid hsl(122, 39%, 49%);
+    margin-top: 100%;
+}
+
+.sidebar h2 {
+    margin-bottom: 10px;
+}
+
+.sidebar .aim {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Main Content */
+.content {
+    width: 70%;
+    padding: 40px;
+}
+
+.content section {
+    margin-bottom: 40px;
+}
+
+.content h2 {
+    color: hsl(152, 65%, 46%);
+}
+
+.skills ul {
+    list-style: none;
+}
+
+.skills li {
+    background: hsl(0, 0%, 93%);
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 8px;
+}
+
+.progress {
+    width: 100%;
+}
+
+/* Project Grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+/* Project Card */
+.project-card {
+    background: hsl(200, 41%, 74%);
+    border-radius: 1rem;
+    overflow: hidden;
+    color: hsl(0, 0%, 4%);
+    text-align: left;
+    margin: 5px 0;
+    box-shadow: 0 4px 15px rgba(251, 253, 254, 0.3);
+    transition: transform 0.3s ease;
+}
+project-card h3, .project-card p {
+    padding: 0 1.5rem;
+}
+
+.project-card h3 {
+    margin: 25px;
+    margin-bottom: 2PX;
+    margin-top: 1px;
+    color: var(--primary-color);
+}
+
+.project-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+ .project-card:hover {
+    transform: translateY(-5px);
+}
+
+.btn-live, .btn-github {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 0.5rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-live:hover, .btn-github:hover {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+}
